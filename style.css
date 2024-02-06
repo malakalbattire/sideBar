@@ -1,0 +1,32 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* تعيين لون الغطاء وتعتيمه */
+  z-index: 9999; /* تأكد من أن الغطاء فوق كل شيء آخر */
+  display: none;
+}
+
+.overlay .sideBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: rgb(219, 213, 213);
+  z-index: 9999;
+}
+
+.list {
+  display: block;
+}
+.overlay .sideBar svg {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
